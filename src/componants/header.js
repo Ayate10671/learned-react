@@ -1,39 +1,36 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <header className="hide-when-mobile">
-        <h1>4opping </h1>
+        <h1>
+          <Link to="/">4opping</Link>
+        </h1>
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/src/pages/home.js">
+            <NavLink className="main-link" to="/">
               Home
-            </a>
-           
+            </NavLink>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/src/pages/prodects.js">
+            <NavLink className="main-link" to="prodects">
               Prodects
-            </a>
-            
+            </NavLink>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/src/pages/prodect.js">
+            <NavLink className="main-link" to="prodect">
               Prodect
-            </a>
-            
+            </NavLink>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/src/pages/addProdects.js">
+            <NavLink className="main-link" to="addProdect">
               Add Prodect
-            </a>
-            
+            </NavLink>
           </li>
         </ul>
       </header>
-
-      
     </div>
   );
 };

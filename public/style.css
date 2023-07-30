@@ -72,6 +72,11 @@
   .main-link {
     padding: 8px 15px;
   }
+  .main-link.active{
+    color: rgb(141, 100, 139);
+    box-shadow: 0 0 5px rgb(112, 25, 119);
+    border-radius: 5px;
+  }
   
   .main-link:hover {
     color: cyan;
